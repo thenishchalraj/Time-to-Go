@@ -23,9 +23,7 @@ func main() {
 
 /*
 Output :
-
 buffered
 channel
 example
-
 */
