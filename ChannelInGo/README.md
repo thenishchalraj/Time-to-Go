@@ -5,7 +5,6 @@ Channels are the pipes that connect concurrent goroutines. You can send values i
 Channels are a typed conduit through which you can send and receive values with the channel operator, <-.
 
 For Example :
-
-ch <- v // Send v to channel ch. v := <-ch // Receive from ch, and assign value to v.
-
 (The data flows in the direction of the arrow.)
+ch <- v    // Send v to channel ch.
+v := <-ch  // Receive from ch, and assign value to v.
