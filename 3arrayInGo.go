@@ -20,4 +20,13 @@ func main(){
 	brr := []int{5,4,3,2,1} //just remove the number of elements to be there and then you can append as many as you want
 	brr = append(brr,0)
 	fmt.Println(brr)
+	
+	// You can use slices as common data structures such as queue and stack by using append
+	sli := []int{1,2,3,4,5}
+	append(sli, 6) // Push into the array
+	fmt.Println(sli)
+	var popped int
+	popped, sli = sli[len(sli)-1], sli[:len(sli)-1] // Pop value will give you the value taken from the slice
+	fmt.Println(popped)
+	fmt.Println(sli)
 }
